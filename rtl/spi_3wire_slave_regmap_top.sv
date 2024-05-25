@@ -64,6 +64,7 @@ module spi_3wire_slave_regmap_top
    
    assign write_pulse = (bit_count == 'd15) && (!rnw);
 
+   // NOTE: registers are only reset by button press, not the CS_N pin
    integer i;
    always_ff @(posedge sclk, negedge rst_n_sync)
      if (~rst_n_sync)     for (i=0; i<=MAX_ADDRESS; i=i+1) registers[i]    <= 8'h00;
