@@ -86,12 +86,6 @@ module tb_spi_3wire ();
       $finish;
    end
 
-   // dump waveforms
-//   initial begin
-//      $shm_open("waves.shm");
-//      $shm_probe("MAS");
-//   end
-
    spi_3wire_slave_regmap_top u_spi_3wire_slave_regmap_top
      ( .reset,
        .sclk,
