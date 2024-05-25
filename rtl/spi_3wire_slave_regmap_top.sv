@@ -41,7 +41,7 @@ module spi_3wire_slave_regmap_top
    .oe     (sdata_oe)   // input
    );
 
-  assign rst_n_spi = rst_n && !ss_n; // clear the SPI when the chip_select is inactive
+  assign rst_n_spi = rst_n && !ss_n; // clear the SPI interface flipflops when the chip_select is inactive
    
   always_ff @(posedge sclk, negedge rst_n_spi)
     if (~rst_n_spi)                         bit_count <= 'd0;
