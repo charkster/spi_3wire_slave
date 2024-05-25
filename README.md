@@ -7,7 +7,7 @@ A standard 4wire SPI master can interface to this FPGA SPI 3wire slave.
 
 ![picture](https://github.com/charkster/spi_3wire_slave/blob/main/spi_4wire_to_3wire.png)
 
-Micropython example (included):
+MicroPython example (included):
 
 ![picture](https://github.com/charkster/spi_3wire_slave/blob/main/micropython_spi_write_and_read.png)
 
